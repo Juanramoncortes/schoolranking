@@ -20,6 +20,12 @@ Route::get('/universidades', function () {
 Route::get('/universidad', function () {
     return view('universidad');
 });
+Route::get('/facultades', function () {
+    return view('facultades');
+});
+Route::get('/facultad', function () {
+    return view('facultad');
+});
 
 Auth::routes();
 

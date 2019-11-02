@@ -17,8 +17,18 @@ function Universidades(){
     let uni="";
     for(let x=0;x<12;x++){
 uni+=`<div>
-<a href="../universidad/"><img src="../img/01.png" alt="" height="200px" width="200px">
+<a href="{{asset('universidad')}}"><img src="../img/01.png" alt="" height="200px" width="200px">
 <p class="text-center">Universidad de Kent</p>
+</a></div>`;
+    }
+    document.getElementById("Universidades").innerHTML=uni;
+}
+function facultades(){
+    let uni="";
+    for(let x=0;x<12;x++){
+uni+=`<div>
+<a href="{{asset('facultad')}}"><img src="../img/01.png" alt="" height="200px" width="200px">
+<p class="text-center">Enfermeria</p>
 </a></div>`;
     }
     document.getElementById("Universidades").innerHTML=uni;

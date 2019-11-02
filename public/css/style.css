@@ -19,6 +19,14 @@
 body {
     font-size: 170%;
 }
+.comentarios{font-size: 70%;
+height: 360px;
+overflow-y: scroll;
+}
+.comentario{
+    border-style: solid;
+
+}
 
 a {
     color: black;
