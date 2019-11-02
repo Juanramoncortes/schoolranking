@@ -1,0 +1,26 @@
+.cont {
+    margin: 0% !important;
+}
+
+
+.login-form {
+    text-align: center;
+    margin: 3% 3% 3% 3% !important;
+
+}
+
+.universidad {
+    text-align: center;
+    margin-top: 3% !important;
+    margin-right: 0% !important;
+    height: 100%;
+}
+
+body {
+    font-size: 170%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}

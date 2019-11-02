@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/universidades', function () {
+    return view('universidades');
+});
+Route::get('/universidad', function () {
+    return view('universidad');
+});
