@@ -20,3 +20,7 @@ Route::get('/universidades', function () {
 Route::get('/universidad', function () {
     return view('universidad');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
