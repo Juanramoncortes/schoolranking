@@ -18,6 +18,16 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>SchoolRanking-Universidades</title>
+    <link href="{{ asset('css/universidades.css')}}" rel="stylesheet">
+    <link href="{{ asset('css/style.css')}}" rel="stylesheet">
+    <script src="{{asset('js/schoolranking.js')}}"></script>
 </head>
 <body>
     <div id="app">
@@ -34,6 +44,23 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
 
+
+                                        <li class="nav-item ml-4">
+                                            <a class="nav-link" href="../">Home <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item ml-4">
+                                                <a class="nav-link" href="#">Conócenos</a>
+                                            </li>
+
+                                        <li class="nav-item active ml-4">
+                                            <a class="nav-link" href="universidades/">Universidades</a>
+                                        </li>
+                                    </ul>
+                                    <form class="form-inline my-2 my-lg-0">
+                                        <input class="form-control mr-sm-2" type="search" onkeyup="search()" placeholder="Search" aria-label="Search" id="Search">
+                                        <button type="button" class="btn btn-success my-2 my-sm-0">Login</button>
+                                    </form>
+                                </div>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
