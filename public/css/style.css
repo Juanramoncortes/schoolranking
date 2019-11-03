@@ -28,7 +28,7 @@ overflow-y: scroll;
 
 }
 
-a {
+ li a {
     color: black;
-    text-decoration: none;
+	text-decoration: none !important;
 }

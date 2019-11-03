@@ -10,8 +10,7 @@
                         <div class="col-12"><img src="../img/01.png" alt="" height="200px" width="200px"></div>
                         <h2 id="calificacion" class="col-12" ></h2>
                         <div class="col-12"><h4>Calificación: <span>Buena</span></h4></div>
-                        <div class="col-12"><button type="button" class="btn btn-secondary">Facultades</button></div>
-                            <div class="col-12"> <button type="button" class="btn btn-secondary">Comentarios</button></div>
+                        <div class="col-12"><a type="button" class="btn btn-secondary" href="{{asset('universidad')}}">Volver a Universidad</a></div>
                                 <div class="col-12"> <a href="tel:3122548691">Contacto: 3122548691</a></div>
                     </div>
                 </div>

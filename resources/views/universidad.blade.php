@@ -11,7 +11,6 @@
                         <h2 id="calificacion" class="col-12" ></h2>
                         <div class="col-12"><h4>Calificación: <span>Buena</span></h4></div>
                         <div class="col-12"><a type="button" class="btn btn-secondary" href="{{asset('facultades')}}">Facultades</a></div>
-                            <div class="col-12"> <button type="button" class="btn btn-secondary">Comentarios</button></div>
                                 <div class="col-12"> <a href="tel:3122548691">Contacto: 3122548691</a></div>
                     </div>
                 </div>
@@ -38,15 +37,26 @@
                 </div>
                 <div class="descripcion col-md-3 mt-4">
                     <h2>Nuevo Comentario:</h2>
-                        <form>
-                        <input class="form-grup" id="comentarioUsuario" type="text"/>
-                        <select name="calificion">
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" >
+                        <input class="form-group" id="comentarioUsuario" type="text"/>
+                        <select name="calificion" class="form-group">
                         <option value="Exelente">Exelente</option>
                         <option value="Bueno">Bueno</option>
                         <option value="Regular">Regular</option>
                         <option value="Malo">Malo</option>
                       </select>
+                      @guest
 
+                      @if (Route::has('register'))
+<br>
+
+                            <a type="button" class="btn btn-secondary" href="{{ route('login') }}">{{ __('Comentar') }}</a>
+                      @endif
+                  @else
+                            <a type="button" class="btn btn-secondary" href="{{ route('comentario') }}">{{ __('Comentar') }}</a>
+
+                                  @csrf
+                  @endguest
                         </form>
 
                 </div>
