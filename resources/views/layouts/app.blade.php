@@ -51,7 +51,7 @@
                                             </li>
 
                                         <li class="nav-item ml-4 mr-5">
-                                            <a class="nav-link" href="{{asset('universidades')}}">Universidades</a>
+                                            <a class="nav-link" href="{{asset('universidad')}}">Universidades</a>
                                         </li>
 
 

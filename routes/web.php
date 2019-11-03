@@ -14,9 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/universidades', function () {
-    return view('universidades');
-});
+
 Route::get('/universidad', function () {
     return view('universidad');
 });
@@ -30,3 +28,8 @@ Route::get('/facultad', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('perfile', 'PerfileController');
+Route::resource('universidad', 'UniversidadController');
+
+
