@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use App\University;
+
 
 class UniversidadController extends Controller
 {
@@ -10,7 +13,10 @@ class UniversidadController extends Controller
     public function index()
     {
         //
-        return view('universidades');
+        $University = DB::table('university')
+        ->get();
+
+        return view('universidades', ['Univercitys' => $University]);
     }
     public function show($universidad_id)
     {
@@ -19,12 +25,29 @@ class UniversidadController extends Controller
     }
     public function edit($universidad_id)
     {
-        //    
-        
-        $user =  universidad::find($universidad_id);
+        //
+         $universidad_id =  University::find($universidad_id );
+
         return view('edituni', ['universidad' => $universidad_id]);
-        
-        
+
+
+    }
+    public function store(Request $request)
+    {  // Validate the request...
+
+        $Universidad = new University;
+
+        $Universidad->nombre = $request->nombre;
+        $Universidad->descripcion = $request->descripcion;
+        $Universidad->estado = $request->estado;
+        $Universidad->municipio = $request->municipio;
+
+        $Universidad->save();
+
+
+        return redirect()->action('UniversidadController@index');
+
+
     }
 
     public function create()

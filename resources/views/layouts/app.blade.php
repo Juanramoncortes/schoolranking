@@ -28,6 +28,7 @@
     <link href="{{ asset('css/universidades.css')}}" rel="stylesheet">
     <link href="{{ asset('css/style.css')}}" rel="stylesheet">
     <script src="{{asset('js/schoolranking.js')}}"></script>
+
 </head>
 <body>
     <div id="app">
@@ -83,11 +84,9 @@
                                         @csrf
                                     </form>
 
-                                    <a class="dropdown-item" href="{{ route('profile.edit', [Auth::user()->id]) }}"> Perfil </a>
+                                    <a class="dropdown-item" href="{{ route('profile.show', [Auth::user()->id]) }}"> Perfil </a>
 
-                                 <form id="logout-form" action="{{ asset('logout') }}" method="POST" style="display: none;">
-                                     @csrf
-                                 </form>
+
                                 </div>
                             </li>
                         @endguest
@@ -117,9 +116,7 @@
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
                 integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
             </script>
-             <script type="text/javascript" src="{{asset('js\municipios.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js\select_estados.js')}}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-    
+               <script src="{{asset('js/municipios.js')}}"></script>
+               <script src="{{asset('js/select_estados.js')}}"></script>
 </body>
 </html>
