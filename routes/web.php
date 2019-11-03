@@ -29,7 +29,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('perfile', 'PerfileController');
+Route::resource('profile', 'ProfileController');
 Route::resource('universidad', 'UniversidadController');
 
 

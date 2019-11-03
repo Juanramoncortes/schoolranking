@@ -8,12 +8,12 @@ class ProfileController extends Controller
 {
     public function show($user_id)
     {
-        //
 
-    }
-    public function edit($user_id)
+        }
+    public function edit()
     {
-        //
+        $id= Auth::user()->id;
+
     }
 
     public function update(Request $request, $user_id)

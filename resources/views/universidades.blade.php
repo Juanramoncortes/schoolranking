@@ -4,7 +4,7 @@
 @section('content')
 
             <div class="flex-container" id="Universidades">
-
+{{ }}
             </div>
 
             <script type="text/javascript">
