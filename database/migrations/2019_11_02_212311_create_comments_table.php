@@ -15,8 +15,8 @@ class CreateCommentsTable extends Migration
     {
         Schema::create('Comments', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('Tipo_comentario')->nullable();
-            $table->string('Comentario')->nullable();
+            $table->string('tipo_comentario')->nullable();
+            $table->string('comentario')->nullable();
             $table->timestamps();
         });
     }
