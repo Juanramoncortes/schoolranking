@@ -1,2 +1,6 @@
 *.sqlite
 *.sqlite-journal
+/vendor
+/node.modules
+/public/storage
+/storage/*.key

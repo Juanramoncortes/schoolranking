@@ -6,11 +6,10 @@
             <div class="cont row">
                 <div class="universidad col-md-3">
                      <div class="row">
-                        <h1 id="title" class="col-12" >Enfermería</h1>
+                        <h1 id="title" class="col-12" >Ingenieria en Sistemas</h1>
                         <div class="col-12"><img src="../img/01.png" alt="" height="200px" width="200px"></div>
                         <h2 id="calificacion" class="col-12" ></h2>
                         <div class="col-12"><h4>Calificación: <span>Buena</span></h4></div>
-                        <div class="col-12"><a type="button" class="btn btn-secondary" href="{{asset('facultades/index')}}">Volver a Facultades</a></div>
                                 <div class="col-12"> <a href="tel:3122548691">Contacto: 3122548691</a></div>
                     </div>
                 </div>
@@ -18,7 +17,7 @@
                     <div class="row">
                         <div class="col-12">
                             <h1>Descripción</h1>
-                            <p id="DescripcionUnivercidda">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut magnam aliquam consectetur molestiae, vel delectus odit aperiam. Animi velit et nesciunt provident explicabo aliquid exercitationem. Qui totam quibusdam itaque maxime.</p>
+                            <p id="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut magnam aliquam consectetur molestiae, vel delectus odit aperiam. Animi velit et nesciunt provident explicabo aliquid exercitationem. Qui totam quibusdam itaque maxime.</p>
 
                         </div>
                         <div class="comentarios">

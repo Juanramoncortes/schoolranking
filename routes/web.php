@@ -15,9 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/universidad', function () {
-    return view('universidad');
+
+Route::get('/conocenos', function () {
+    return view('conocenos');
 });
+
+
 Route::get('/facultades', function () {
     return view('facultades');
 });
@@ -32,5 +35,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('profile', 'ProfileController');
 Route::resource('universidad', 'UniversidadController');
 Route::resource('facultad', 'FacultadController');
+Route::resource('facultades','FacultadesController');
 
 

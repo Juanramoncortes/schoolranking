@@ -28,13 +28,14 @@
     <link href="{{ asset('css/universidades.css')}}" rel="stylesheet">
     <link href="{{ asset('css/style.css')}}" rel="stylesheet">
     <script src="{{asset('js/schoolranking.js')}}"></script>
+
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                School-Ranking
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -47,7 +48,7 @@
 
 
                                         <li class="nav-item ml-4">
-                                                <a class="nav-link" href="#">Conócenos</a>
+                                                <a class="nav-link" href="{{ url('conocenos') }}"">Conócenos</a>
                                             </li>
 
                                         <li class="nav-item ml-4 mr-5">
@@ -83,11 +84,9 @@
                                         @csrf
                                     </form>
 
-                                    <a class="dropdown-item" href="{{ route('profile.edit', [Auth::user()->id]) }}"> Perfil </a>
+                                    <a class="dropdown-item" href="{{ route('profile.show', [Auth::user()->id]) }}"> Perfil </a>
 
-                                 <form id="logout-form" action="{{ asset('logout') }}" method="POST" style="display: none;">
-                                     @csrf
-                                 </form>
+
                                 </div>
                             </li>
                         @endguest
@@ -117,5 +116,7 @@
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
                 integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
             </script>
+               <script src="{{asset('js/municipios.js')}}"></script>
+               <script src="{{asset('js/select_estados.js')}}"></script>
 </body>
 </html>
