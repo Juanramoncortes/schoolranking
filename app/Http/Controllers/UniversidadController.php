@@ -20,8 +20,9 @@ class UniversidadController extends Controller
     }
     public function show($universidad_id)
     {
-        //
-        return view('universidad');
+        //universidad
+        $universidad =  University::find($universidad_id);
+        return view('universidad',['universidad' => $universidad]);
     }
     public function edit($universidad_id)
     {
@@ -36,7 +37,12 @@ class UniversidadController extends Controller
     {  // Validate the request...
 
         $Universidad = new University;
-
+        $request->validate([
+            'name' => 'required',
+            'estado' => 'required',
+            'municipio' => 'required',
+            'descripcion' => 'required'
+        ]);
         $Universidad->nombre = $request->nombre;
         $Universidad->descripcion = $request->descripcion;
         $Universidad->estado = $request->estado;

@@ -20,7 +20,7 @@
                     @foreach ($Univercitys as $Univercity)
 
                         <div>
-                                <a href="{{asset('universidad')}}"><img src="{{asset('img/01.png')}}" alt="" height="200px" width="200px">
+                                <a href="{{route('universidad.show',$Univercity->id)}}"><img src="{{asset('img/01.png')}}" alt="" height="200px" width="200px">
                                 <p class="text-center">{{$Univercity->nombre}}</p>
                                 </a></div>
 

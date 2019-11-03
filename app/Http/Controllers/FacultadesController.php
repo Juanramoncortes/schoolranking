@@ -12,10 +12,11 @@ class FacultadesController extends Controller
         //
         return view('facultades');
     }
- 
+
     public function show($universidad_id)
     {
         //
+
         return view('facultades');
     }
     public function create()

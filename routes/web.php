@@ -15,9 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/universidad', function () {
-    return view('universidad');
+
+Route::get('/conocenos', function () {
+    return view('conocenos');
 });
+
+
 Route::get('/facultades', function () {
     return view('facultades');
 });

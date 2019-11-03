@@ -48,7 +48,7 @@
 
 
                                         <li class="nav-item ml-4">
-                                                <a class="nav-link" href="#">Conócenos</a>
+                                                <a class="nav-link" href="{{ url('conocenos') }}"">Conócenos</a>
                                             </li>
 
                                         <li class="nav-item ml-4 mr-5">
