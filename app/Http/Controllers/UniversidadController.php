@@ -19,13 +19,18 @@ class UniversidadController extends Controller
     }
     public function edit($universidad_id)
     {
-        //
+        //    
+        
+        $user =  universidad::find($universidad_id);
+        return view('edituni', ['universidad' => $universidad_id]);
+        
+        
     }
 
     public function create()
     {
         //
-        return view('reguni');
+        return view('registraruniversidad');
     }
     public function update(Request $request, $universidad_id)
     {

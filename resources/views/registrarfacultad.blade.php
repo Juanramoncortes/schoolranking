@@ -8,10 +8,10 @@
                 <div class="well well-sm">
                     <form class="form-horizontal" method="post">
                         <fieldset>
-                            <legend class="text-center header">Registro de Universidad</legend>
+                            <legend class="text-center header">Registro de Facultad</legend>
 
                             <div class="form-group" >    
-                                <label for="nombre_universidad" class=etiqueta_control>Nombre de la Universidad</label>
+                                <label for="nombre_universidad" class=etiqueta_control>Nombre de la facultad</label>
                                 <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-university"></i></span>
                                 <div class="col-md-8">
                                     <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">

@@ -31,5 +31,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('perfile', 'PerfileController');
 Route::resource('universidad', 'UniversidadController');
+Route::resource('facultades','FacultadesController');
 
 
