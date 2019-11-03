@@ -83,11 +83,7 @@
                                         @csrf
                                     </form>
 
-                                    <a class="dropdown-item" href="{{ asset('profile') }}"
-                                    onclick="event.preventDefault();
-                                                  document.getElementById('logout-form').submit();">
-                                     {{ __('Logout') }}
-                                 </a>
+                                    <a class="dropdown-item" href="{{ route('profile.edit', [Auth::user()->id]) }}"> Perfil </a>
 
                                  <form id="logout-form" action="{{ asset('logout') }}" method="POST" style="display: none;">
                                      @csrf
